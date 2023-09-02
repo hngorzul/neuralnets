@@ -51,7 +51,7 @@ def get_elements(a: np.array, indices: np.array) -> np.array:
     :param indices: 1D array
     :return: 1D array of elements
     """
-    a = np.array([A[k][i[k]] for k in i])
+    a = np.array([a[k][indices[k]] for k in indices])
     return a
 
 
