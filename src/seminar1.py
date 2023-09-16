@@ -22,7 +22,7 @@ def broadcast_array(a: np.array, n: int) -> np.array:
     :return: 2D matrix
     """
     x1 = np.ones(n).reshape(-1,1)
-    x2 = a.reshape(1, -1)
+    x2 = a.reshape(1,-1)
     return x1 * x2
 
 
