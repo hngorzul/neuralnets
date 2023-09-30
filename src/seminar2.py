@@ -145,7 +145,7 @@ def train():
     learning_rate = 1e-4
     reg = 10
     num_iters = 1000
-    batch_size = 8
+    batch_size = 64
     # ******* END OF YOUR CODE ************
 
     (x_train, y_train), (x_test, y_test) = get_preprocessed_data()
