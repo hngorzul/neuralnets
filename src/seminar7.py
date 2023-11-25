@@ -67,7 +67,7 @@ def train():
     model = make_model()
     model.summary()
     model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy', tf.keras.metrics.Precision()])
-    model.fit(sequences_matrix, Y_train, batch_size=128, epochs=10, validation_split=0.2)
+    model.fit(sequences_matrix, Y_train, batch_size=64, epochs=10, validation_split=0.2)
     model.save('models/model_7')
 
 
